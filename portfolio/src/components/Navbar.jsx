@@ -18,6 +18,7 @@ export const Navbar = () =>{
                 <span>esp</span>
               </button>
           </ul>
+          <hr />
         </div>
     )
 }
