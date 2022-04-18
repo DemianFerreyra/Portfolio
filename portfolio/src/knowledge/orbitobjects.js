@@ -1,10 +1,43 @@
 
 export const front = {
-    baseimg : "javascript",
-    leftmargin: "20",
-    topmargin: "30",
+    baseimg : "Front-end",
+    leftmargin: "25",
+    topmargin: "10",
+    margintext: "28",
+    size: "10",
     images: [
-    {name:"reacticon.svg", time: "4", distance: "20", color: "cyan"}, 
-    {name:"sassicon.svg", time: "2", distance: "15", color: "pink"}
-    ]
+    {name:"reacticon.svg", time: "5", distance: "11", color: "cyan"},
+    {name:"redux.svg", time: "9", distance: "19", color: "cyan"},  
+    {name:"sassicon.svg", time: "3", distance: "7", color: "pink"},
+    {name:"bootstrap.svg", time: "6", distance: "14", color: "cyan"} 
+    ],
+    know: ["React", "Redux", "Sass", "Bootstrap"]
+}
+
+export const back = {
+    baseimg : "Back-end",
+    leftmargin: "75",
+    topmargin: "18",
+    margintext: "-25",
+    size: "6",
+    images: [
+    {name:"node.svg", time: "5", distance: "8", color: "cyan"},
+    {name:"mysql.svg", time: "9", distance: "15", color: "cyan"},  
+    {name:"postgre.svg", time: "3", distance: "5", color: "pink"},
+    ],
+    know: ["NodeJS", "MySQL", "PostgreSQL", "Sequalize"]
+}
+
+export const generals = {
+    baseimg : "Generals",
+    leftmargin: "40",
+    topmargin: "23",
+    margintext: "25",
+    size: "8",
+    images: [
+    {name:"github.svg", time: "6", distance: "8", color: "cyan"},
+    {name:"git.svg", time: "8", distance: "12", color: "cyan"},  
+    {name:"javascript.svg", time: "15", distance: "15", color: "pink"},
+    ],
+    know: ["Github", "Git", "Javascript"]
 }

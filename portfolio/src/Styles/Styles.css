@@ -1,17 +1,20 @@
 body {
   overflow-x: hidden;
-  background-color: rgb(27, 27, 27);
 }
 
 /*# NavBar */
 .Navbar {
+  border-bottom: 1px solid white;
+  position: sticky;
+  top: 0px;
   width: 100%;
+  height: 5vh;
+  background-color: rgba(0, 0, 0, 0.247);
 }
 .Navbar hr {
   color: aqua;
 }
 .Navbar ul {
-  height: 4vh;
   list-style: none;
   margin: 0px;
   padding: 0px;
@@ -28,47 +31,51 @@ body {
 /*# Inicio */
 .Intro {
   cursor: default;
-  margin-top: 50px;
+  margin-top: 2vh;
   height: fit-content;
   width: 100%;
-  font-size: 4vw;
+  font-size: 5vw;
 }
 .Intro .tagleft {
   color: white;
-  transform: translate(21vw, 7vw);
-  margin-bottom: 6px;
+  transform: translate(33vw, 12vw);
 }
 .Intro .tagright {
   color: white;
-  transform: translate(-20vw, -5vw);
+  transform: translate(-32vw, -9vw);
 }
 
 .Aboutme {
-  margin-top: 15vw;
+  margin-top: 5vh;
   font-size: 2vw;
   height: 10vw;
   width: 100%;
 }
 
 .Knowledge {
-  height: 90vw;
-  background-color: rgb(105, 179, 179);
+  height: 70vw;
 }
 
 /*# Elemento orbital */
+.Aux {
+  width: 1vw;
+  height: 1vw;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .giro {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 15vw;
-  height: 15vw;
-  background-color: aqua;
+  background-color: rgb(206, 40, 40);
+  font-size: 2vw;
+  border-radius: 50%;
 }
 .giro .Orbiticon {
-  width: 7vw;
-}
-.giro .Orbitobj {
-  position: absolute;
+  width: 3vw;
 }
 
 @keyframes round_round {
@@ -77,14 +84,6 @@ body {
   }
   to {
     transform: rotate(360deg);
-  }
-}
-@keyframes round_roundfix {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(-360deg);
   }
 }
 
