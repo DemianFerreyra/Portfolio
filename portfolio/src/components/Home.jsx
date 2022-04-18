@@ -20,7 +20,7 @@ export const Home = () =>{
           <div className="Knowledge">
            {
            orbits?.map((orbit) => 
-             <Orbit baseimg = {orbit.baseimg} knowns = {orbit.images} topmargin = {orbit.topmargin} leftmargin = {orbit.leftmargin} size = {orbit.size} know = {orbit.know} margintext = {orbit.margintext}/>
+             <Orbit baseimg = {orbit.baseimg} knowns = {orbit.images} topmargin = {orbit.topmargin} leftmargin = {orbit.leftmargin} size = {orbit.size} know = {orbit.know} margintext = {orbit.margintext} id = {orbit.id}/>
            )
           }
           </div>
