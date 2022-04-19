@@ -23,7 +23,7 @@ export const Orbit = ({baseimg, knowns, topmargin, leftmargin, size, know, margi
                 </div>
                  <div className="Orbitobj" style={{animation: `round_round ${known.time}s linear infinite`}}>
                      <div style={{transform:`translateX(${known.distance}vw)`}} className="Suborbit">
-                     <img src={require(`../icons/Knowledge/${known.name}`)} alt="conocimiento" className="Orbiticon"/>
+                     <img style={{animation: `round_roundfix ${known.time}s linear infinite`}} src={require(`../icons/Knowledge/${known.name}`)} alt="conocimiento" className="Orbiticon"/>
                      </div>
                  </div>
              </div>     

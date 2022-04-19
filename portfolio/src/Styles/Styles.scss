@@ -48,13 +48,15 @@ body{
     }
 }
 .Aboutme{
+    cursor:default;
     margin-top: 5vh;
     font-size: 2vw;
     height: 10vw;
     width: 100%;
 }
 .Knowledge{
-    height: 70vw;
+    cursor:default;
+    height: 100vw;
 }
 
 
@@ -81,11 +83,92 @@ body{
         position: absolute;
     }
 }
+
+/*# Elemento project */
+.Projects{
+    background-color: rgba(0, 0, 0, 0.068);
+    width: 100%;
+    height: 40vw;
+    .rightb2, .leftb2{
+        position: absolute;
+        font-size: 2vw;
+        height: 6vw;
+        width: 3vw;
+        z-index: 10;
+        border: none;
+    }
+}
+.Projecto{
+    opacity: 0;
+    transition: opacity ease-in-out 0.2s;
+}
+.Project{  
+    margin-left: 10vw;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .Projectshow{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        .rightb, .leftb{
+            position: absolute;
+            font-size: 2vw;
+            height: 6vw;
+            width: 3vw;
+            z-index: 10;
+            border: none;
+        }
+    }
+    .ImagesSlide{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        height: 30vw;
+        width: 40vw;
+        .Slide{
+            margin: 0;
+            display: flex;
+            align-items: center;
+            padding: 0;
+        }
+    }
+}
+.ShowImage{
+    position: absolute;
+    height: 30vw;
+    width: 40vw;
+    opacity: 0;        
+    background-color: rgb(115, 255, 0);
+    transition: opacity ease-in-out 0.2s;
+    .ShownImage{    
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+    }
+}
+
+/*# Transicion imagen */
+.active-anim{
+    opacity: 1;
+}
+
+
 @keyframes round_round{
     from {
         transform: rotate(0deg);
     }
     to {
         transform: rotate(360deg);
+    }
+}
+@keyframes round_roundfix{
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
     }
 }
