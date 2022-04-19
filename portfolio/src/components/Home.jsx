@@ -45,7 +45,7 @@ export const Home = () =>{
           <button className="rightb2" onClick={prev} style={{right:"0", transform: `translateY(20vw)`}}>&rarr;</button>   
            {
            projects.map((project, index) => 
-             <div className={slideIndex === index + 1 ? "Projecto active-anim" : "Projecto"}>
+             <div className={slideIndex === index + 1 ? "Projecto active-project" : "Projecto"}>
                <Project name = {project.name} desc = {project.desc} link = {project.link} images = {project.images} />
              </div>
            )

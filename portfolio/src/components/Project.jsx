@@ -17,7 +17,7 @@ export const Project = ({ name, desc, link, images }) => {
     <div className="Project">
       {{ link } ? (
         <h1 style={{fontSize: '3vw'}}>
-          <a href={link}>{name}</a>
+          <a href={link} style={{color: "white"}}>{name}</a>
         </h1>
       ) : (
         <h1 style={{fontSize: '3vw'}}>{name}</h1>

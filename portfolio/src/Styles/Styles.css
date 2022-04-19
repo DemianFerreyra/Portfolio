@@ -5,6 +5,7 @@ body {
 
 /*# NavBar */
 .Navbar {
+  z-index: 10;
   border-bottom: 1px solid white;
   position: sticky;
   top: 0px;
@@ -100,8 +101,8 @@ body {
 }
 
 .Projecto {
-  opacity: 0;
-  transition: opacity ease-in-out 0.2s;
+  transform: translateX(100vw);
+  transition: transform ease-in-out 0.2s;
 }
 
 .Project {
@@ -118,6 +119,7 @@ body {
 }
 .Project .Projectshow .rightb, .Project .Projectshow .leftb {
   position: absolute;
+  background-color: rgba(245, 245, 245, 0.507);
   font-size: 2vw;
   height: 6vw;
   width: 3vw;
@@ -156,6 +158,10 @@ body {
 /*# Transicion imagen */
 .active-anim {
   opacity: 1;
+}
+
+.active-project {
+  transform: translateX(0vw);
 }
 
 @keyframes round_round {
