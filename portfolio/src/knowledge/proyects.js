@@ -1,6 +1,6 @@
 const instant = {
-    name: "Proyecto individual: Instant",
-    desc: "Proyecto de red social estilo Instagram usando React/Redux sin uso de API's.",
+    name: "Practice proyect: Instant",
+    desc: "Instagram like application, using React/Redux and a local database. No API's. Application not deployed",
     link: "https://github.com/DemianFerreyra/INSTANT",
     images: [
         "Instant1.png",

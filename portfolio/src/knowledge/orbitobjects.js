@@ -19,7 +19,7 @@ export const back = {
     baseimg : "Back-end",
     leftmargin: "75",
     topmargin: "18",
-    margintext: "-25",
+    margintext: "-30",
     size: "6",
     id: "2",
     images: [

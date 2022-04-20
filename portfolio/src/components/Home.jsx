@@ -4,7 +4,7 @@ import { front, back, generals } from '../knowledge/orbitobjects';
 import { Project } from './Project';
 import {proyectos} from '../knowledge/proyects';
 import React, {useState} from "react";
-
+import { Contact } from './Contact';
 
 export const Home = () =>{
     const orbits = [front, back, generals]
@@ -25,13 +25,13 @@ export const Home = () =>{
 
     return(
         <div>
-          <div className="Intro">
+          <div className="Intro" id='beginning'>
             <p className="tagleft">{`<h1>`}</p>
              <h1 className="Title"><span style={{color: "red"}}>Hi! </span>im Demian</h1>
              <p className="tagright">{`<h1>`}</p>
           </div>    
-          <div className='Aboutme'>
-           <p>Desarrollador web full stack. Graduado de la academia <a href="https://www.soyhenry.com/" style={{color:"white"}}>SoyHenry</a>.Tengo conocimientos en:</p>
+          <div className='Aboutme' id='aboutme'>
+           <p>Full stack web developer, from <a href="https://www.soyhenry.com/" style={{color:"white"}}>SoyHenry</a> academy.I got knowns on:</p>
           </div>
           <div className="Knowledge">
            {
@@ -40,7 +40,7 @@ export const Home = () =>{
            )
           }
           </div>
-          <div className="Projects">
+          <div className="Projects" id='projects'>
           <button className="leftb2" onClick={next} style={{left:"0", transform: `translateY(20vw)`}}>&larr;</button> 
           <button className="rightb2" onClick={prev} style={{right:"0", transform: `translateY(20vw)`}}>&rarr;</button>   
            {
@@ -51,7 +51,10 @@ export const Home = () =>{
            )
           }
           </div>
+          <div className='Contact' style={{bottom: "0", marginTop: "8vw"}} id= "contact">
+            <h1 style={{marginTop: "15vw", marginBottom: "3vw"}}>Thanks for your visit! If you got interested, contact me</h1>
+            <Contact/>
+          </div>
         </div>
     )
 }
-

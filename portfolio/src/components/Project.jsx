@@ -34,7 +34,7 @@ export const Project = ({ name, desc, link, images }) => {
             ))}
           </ul>
         </div>
-        <p>{desc}</p>
+        <p style={{width: "40vw", height: "20vw", fontSize: "1.5vw", overflowY: "scroll"}}>{desc}</p>
       </div>
     </div>
   );

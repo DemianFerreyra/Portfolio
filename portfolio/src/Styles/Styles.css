@@ -5,31 +5,41 @@ body {
 
 /*# NavBar */
 .Navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   z-index: 10;
   border-bottom: 1px solid white;
   position: sticky;
   top: 0px;
   width: 100%;
-  height: 5vh;
+  height: 3vw;
   background-color: rgba(24, 24, 24, 0.877);
 }
 .Navbar hr {
   color: aqua;
 }
 .Navbar ul {
-  font-size: 2vh;
-  height: 5vh;
+  font-size: 2vw;
+  height: 5vw;
   list-style: none;
   margin: 0px;
   padding: 0px;
-  justify-content: space-around;
   align-items: center;
   display: flex;
   flex-direction: row;
 }
 .Navbar ul a {
   text-decoration: none;
+  cursor: pointer;
   color: white;
+  margin-left: 5vw;
+  padding: 0.1vw 3vw;
+  border-left: 0.1vw solid rgba(255, 255, 255, 0.24);
+}
+.Navbar ul a:hover {
+  background-color: rgba(0, 0, 0, 0.171);
 }
 
 /*# Inicio */
@@ -126,6 +136,9 @@ body {
   z-index: 10;
   border: none;
 }
+.Project .Projectshow .rightb:hover, .Project .Projectshow .leftb:hover {
+  background-color: rgba(49, 49, 49, 0.685);
+}
 .Project .ImagesSlide {
   display: flex;
   flex-direction: row;
@@ -153,6 +166,22 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/*# Lowbar */
+.Lowbar {
+  font-size: 1.5vw;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(27, 27, 27);
+  width: 100%;
+  height: 8vh;
+  align-items: center;
+  justify-content: space-around;
+}
+.Lowbar img {
+  width: 3vw;
+  height: 3vw;
 }
 
 /*# Transicion imagen */
