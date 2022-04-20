@@ -31,7 +31,7 @@ export const Home = () =>{
              <p className="tagright">{`<h1>`}</p>
           </div>    
           <div className='Aboutme' id='aboutme'>
-           <p>Full stack web developer, from <a href="https://www.soyhenry.com/" style={{color:"white"}}>SoyHenry</a> academy.I got knowns on:</p>
+           <p>Full stack web developer,graduated from <a href="https://www.soyhenry.com/" style={{color:"white"}}>SoyHenry</a> academy.I have knowledge on:</p>
           </div>
           <div className="Knowledge">
            {
@@ -41,8 +41,8 @@ export const Home = () =>{
           }
           </div>
           <div className="Projects" id='projects'>
-          <button className="leftb2" onClick={next} style={{left:"0", transform: `translateY(20vw)`}}>&larr;</button> 
-          <button className="rightb2" onClick={prev} style={{right:"0", transform: `translateY(20vw)`}}>&rarr;</button>   
+          <button className="leftb2" onClick={next}>&larr;</button> 
+          <button className="rightb2" onClick={prev}>&rarr;</button>   
            {
            projects.map((project, index) => 
              <div className={slideIndex === index + 1 ? "Projecto active-project" : "Projecto"}>
@@ -52,7 +52,7 @@ export const Home = () =>{
           }
           </div>
           <div className='Contact' style={{bottom: "0", marginTop: "8vw"}} id= "contact">
-            <h1 style={{marginTop: "15vw", marginBottom: "3vw"}}>Thanks for your visit! If you got interested, contact me</h1>
+            <h1 style={{fontSize: "3.5vw",marginTop: "15vw", marginBottom: "3vw"}}>Thanks for your visit! If you got interested, contact me</h1>
             <Contact/>
           </div>
         </div>

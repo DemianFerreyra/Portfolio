@@ -1,5 +1,6 @@
 body {
   overflow-x: hidden;
+  background-color: rgb(32, 32, 32);
   color: white;
 }
 
@@ -51,9 +52,11 @@ body {
   font-size: 5vw;
 }
 .Intro .tagleft {
+  color: rgb(207, 201, 201);
   transform: translate(33vw, 12vw);
 }
 .Intro .tagright {
+  color: rgb(207, 201, 201);
   transform: translate(-32vw, -9vw);
 }
 
@@ -101,6 +104,12 @@ body {
   width: 100%;
   height: 40vw;
 }
+.Projects .leftb2 {
+  left: 0;
+}
+.Projects .rightb2 {
+  right: 0;
+}
 .Projects .rightb2, .Projects .leftb2 {
   position: absolute;
   font-size: 2vw;
@@ -108,6 +117,7 @@ body {
   width: 3vw;
   z-index: 10;
   border: none;
+  transform: translateY(18vw);
 }
 
 .Projecto {
@@ -127,6 +137,12 @@ body {
   align-items: center;
   flex-direction: row;
 }
+.Project .Projectshow .rightb {
+  transform: translateX(36.5vw);
+}
+.Project .Projectshow .leftb {
+  transform: translateX(0.5vw);
+}
 .Project .Projectshow .rightb, .Project .Projectshow .leftb {
   position: absolute;
   background-color: rgba(245, 245, 245, 0.507);
@@ -138,6 +154,12 @@ body {
 }
 .Project .Projectshow .rightb:hover, .Project .Projectshow .leftb:hover {
   background-color: rgba(49, 49, 49, 0.685);
+}
+.Project .Projectshow .Projectdesc {
+  width: 40vw;
+  height: 20vw;
+  overflow-y: hidden;
+  font-size: 2.5vw;
 }
 .Project .ImagesSlide {
   display: flex;
@@ -170,18 +192,18 @@ body {
 
 /*# Lowbar */
 .Lowbar {
-  font-size: 1.5vw;
+  font-size: 2vw;
   display: flex;
   flex-direction: row;
   background-color: rgb(27, 27, 27);
   width: 100%;
-  height: 8vh;
+  height: 4vh;
   align-items: center;
   justify-content: space-around;
 }
 .Lowbar img {
-  width: 3vw;
-  height: 3vw;
+  width: 3vh;
+  height: 3vh;
 }
 
 /*# Transicion imagen */
@@ -207,6 +229,67 @@ body {
   }
   to {
     transform: rotate(0deg);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .Projects {
+    height: 90vw;
+  }
+  .Projects .leftb2 {
+    left: 0;
+  }
+  .Projects .rightb2 {
+    right: 0;
+  }
+  .Projects .rightb2, .Projects .leftb2 {
+    font-size: 5vw;
+    height: 15vw;
+    width: 8vw;
+    transform: translateY(26vw);
+  }
+
+  .Project {
+    margin-left: 20vw;
+  }
+  .Project .Projectshow {
+    flex-direction: column;
+  }
+  .Project .Projectshow .rightb {
+    transform: translate(26vw, 20vw);
+  }
+  .Project .Projectshow .leftb {
+    transform: translate(-26vw, 20vw);
+  }
+  .Project .Projectshow .rightb, .Project .Projectshow .leftb {
+    background-color: rgba(245, 245, 245, 0.507);
+    font-size: 4vw;
+    height: 10vw;
+    width: 6vw;
+  }
+  .Project .Projectshow .Projectdesc {
+    width: 60vw;
+    height: 25vw;
+  }
+  .Project .ImagesSlide {
+    height: 50vw;
+    width: 60vw;
+  }
+
+  .ShowImage {
+    height: 50vw;
+    width: 60vw;
+  }
+
+  .Navbar {
+    height: 4vh;
+  }
+  .Navbar ul {
+    font-size: 1.5vh;
+  }
+  .Navbar ul a {
+    margin-left: 1vh;
+    padding: 0.1vh 4vw;
+    border-left: 0.1vh solid rgba(255, 255, 255, 0.24);
   }
 }
 

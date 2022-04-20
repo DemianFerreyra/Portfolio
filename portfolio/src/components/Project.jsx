@@ -23,8 +23,8 @@ export const Project = ({ name, desc, link, images }) => {
         <h1 style={{fontSize: '3vw'}}>{name}</h1>
       )}
       <div className="Projectshow">
-      <button className="leftb" onClick={prev} style={{transform: 'translateX(0.5vw)'}}>&larr;</button>  
-      <button className="rightb" onClick={next} style={{transform: 'translateX(36.5vw)'}}>&rarr;</button>
+      <button className="leftb" onClick={prev}>&larr;</button>  
+      <button className="rightb" onClick={next}>&rarr;</button>
         <div className="ImagesSlide" style={{border: '1px solid white'}}>
           <ul className="Slide">
             {images.map((image, index) => (
@@ -34,7 +34,7 @@ export const Project = ({ name, desc, link, images }) => {
             ))}
           </ul>
         </div>
-        <p style={{width: "40vw", height: "20vw", fontSize: "1.5vw", overflowY: "scroll"}}>{desc}</p>
+        <p className="Projectdesc">{desc}</p>
       </div>
     </div>
   );

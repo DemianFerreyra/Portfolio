@@ -1,11 +1,3 @@
-.Backimg{
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    z-index: -10;
-    background-color: rgb(36, 36, 36);
-}
 .BG-Beginning{
     cursor:default;
     color: rgba(255, 255, 255, 0.315);
@@ -41,4 +33,9 @@
     font-weight: 700;
     margin-top: 210vw;
     margin-left: 76%;
+}
+@media only screen and (max-width: 600px) {
+    .BG-Contact{
+        margin-top: 263vw;
+    }
 }
