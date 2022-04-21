@@ -14,7 +14,7 @@ export const Orbit = ({baseimg, knowns, topmargin, leftmargin, size, know, margi
             }
             </ul>
   
-            <p>{baseimg}</p>
+            <p style={{color: "black", fontWeight: '700', fontSize: `${size / 6}vw`}}>{baseimg}</p>
             {
              knowns?.map((known) =>
              <div className="Aux" style={{borderRadius: '50%',border: '0.2vw dashed white',width: `${known.distance * 2}vw` ,height: `${known.distance * 2}vw`, zIndex: `-2`}}>

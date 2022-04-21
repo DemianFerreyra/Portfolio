@@ -5,7 +5,7 @@ export const Navbar = () => {
   const scroll = (el) => {
     const elemento = document.getElementById(el);
     window.scrollTo({
-      top: elemento.offsetTop - 100,
+      top: elemento.offsetTop,
       behavior: "smooth",
     });
   };
@@ -16,10 +16,10 @@ export const Navbar = () => {
           <a onClick={() => scroll("beginning")}>Beginning</a>
         </li>
         <li>
-          <a onClick={() => scroll("aboutme")}>About me</a>
+          <a onClick={() => scroll("projects")}>Projects</a>
         </li>
         <li>
-          <a onClick={() => scroll("projects")}>Projects</a>
+          <a onClick={() => scroll("aboutme")}>About me</a>
         </li>
         <li>
           <a onClick={() => scroll("contact")}>Contact</a>
