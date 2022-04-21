@@ -7,7 +7,7 @@
     margin-top: 3vw;
     margin-left: 3%;
 }
-.BG-About-me{
+.BG-Proyects{
     cursor:default;
     color: rgba(255, 255, 255, 0.315);
     position: absolute;
@@ -16,13 +16,13 @@
     margin-top: 44vw;
     margin-left: 72%;
 }
-.BG-Proyects{
+.BG-About-me{
     cursor:default;
     color: rgba(255, 255, 255, 0.315);
     position: absolute;
     font-size: 4vw;
     font-weight: 700;
-    margin-top: 160vw;
+    margin-top: 90vw;
     margin-left: 3%;
 }
 .BG-Contact{
@@ -35,7 +35,10 @@
     margin-left: 76%;
 }
 @media only screen and (max-width: 600px) {
+    .BG-About-me{
+        margin-top: 125vw;
+    }
     .BG-Contact{
-        margin-top: 263vw;
+        margin-top: 240vw;
     }
 }

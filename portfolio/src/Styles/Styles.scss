@@ -1,6 +1,6 @@
 body{
     overflow-x: hidden;
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(40, 40, 42);
     color: white;
 }
 
@@ -16,11 +16,8 @@ body{
  position: sticky;
  top:0px;
  width: 100%;
- height: 3vw;
+ height: 3vh;
  background-color: rgba(24, 24, 24, 0.877);
- hr{
-     color: aqua;
- }
  ul{
     a{
      text-decoration: none;
@@ -33,8 +30,7 @@ body{
     a:hover{
         background-color: rgba(0, 0, 0, 0.171);
     }
-    font-size: 2vw;
-    height: 5vw;
+    font-size: 2vh;
     list-style: none;
     margin: 0px;
     padding: 0px;
@@ -63,7 +59,7 @@ body{
 }
 .Aboutme{
     cursor:default;
-    margin-top: 5vh;
+    margin-top: 10vh;
     font-size: 2vw;
     height: 10vw;
     width: 100%;
@@ -87,7 +83,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(151, 59, 59);
+    background-color: rgb(100, 244, 172);
     font-size: 2vw;
     border-radius: 50%;
     .Orbiticon{
@@ -195,7 +191,7 @@ body{
  flex-direction: row;
  background-color: rgb(27, 27, 27);
  width: 100%;
- height: 4vh;
+ height: 5vh;
  align-items: center;
  justify-content: space-around;
  img{
@@ -231,7 +227,7 @@ body{
 }
 @media only screen and (max-width: 600px) {
     .Projects{
-        height: 90vw;
+        height: 75vw;
         .leftb2{
             left: 0;
         }
@@ -277,7 +273,10 @@ body{
         width: 60vw;       
     }
 
-
+    .Aboutme{
+        margin-top: 5vh;
+        font-size: 2.5vw;
+    }
 
     .Navbar{
         height: 4vh;

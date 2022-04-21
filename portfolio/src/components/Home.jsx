@@ -27,20 +27,10 @@ export const Home = () =>{
         <div>
           <div className="Intro" id='beginning'>
             <p className="tagleft">{`<h1>`}</p>
-             <h1 className="Title"><span style={{color: "red"}}>Hi! </span>im Demian</h1>
+             <h1 className="Title"><span style={{color: "rgb(100, 244, 172)"}}>Hi! </span>im Demian</h1>
              <p className="tagright">{`<h1>`}</p>
           </div>    
-          <div className='Aboutme' id='aboutme'>
-           <p>Full stack web developer,graduated from <a href="https://www.soyhenry.com/" style={{color:"white"}}>SoyHenry</a> academy.I have knowledge on:</p>
-          </div>
-          <div className="Knowledge">
-           {
-           orbits?.map((orbit) => 
-             <Orbit baseimg = {orbit.baseimg} knowns = {orbit.images} topmargin = {orbit.topmargin} leftmargin = {orbit.leftmargin} size = {orbit.size} know = {orbit.know} margintext = {orbit.margintext} id = {orbit.id}/>
-           )
-          }
-          </div>
-          <div className="Projects" id='projects'>
+                <div className="Projects" id='projects'>
           <button className="leftb2" onClick={next}>&larr;</button> 
           <button className="rightb2" onClick={prev}>&rarr;</button>   
            {
@@ -51,8 +41,18 @@ export const Home = () =>{
            )
           }
           </div>
-          <div className='Contact' style={{bottom: "0", marginTop: "8vw"}} id= "contact">
-            <h1 style={{fontSize: "3.5vw",marginTop: "15vw", marginBottom: "3vw"}}>Thanks for your visit! If you got interested, contact me</h1>
+          <div className='Aboutme' id='aboutme'>
+           <p>Full stack web developer,graduated from <a href="https://www.soyhenry.com/" style={{color:"white"}}>SoyHenry</a> academy.I have knowledge on:</p>
+          </div>
+          <div className="Knowledge">
+           {
+           orbits?.map((orbit) => 
+             <Orbit baseimg = {orbit.baseimg} knowns = {orbit.images} topmargin = {orbit.topmargin} leftmargin = {orbit.leftmargin} size = {orbit.size} know = {orbit.know} margintext = {orbit.margintext} id = {orbit.id}/>
+           )
+          }
+          </div>
+          <div className='Contact' id= "contact">
+            <h1 style={{fontSize: "3.5vw",marginTop: "7vw", marginBottom: "5vw"}}>Thanks for your visit! If you got interested, contact me</h1>
             <Contact/>
           </div>
         </div>
