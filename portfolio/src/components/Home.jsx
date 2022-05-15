@@ -52,7 +52,7 @@ export const Home = () =>{
           }
           </div>
           <div className='Contact' id= "contact">
-            <h1 style={{fontSize: "3.5vw",marginTop: "7vw", marginBottom: "5vw"}}>Thanks for your visit! If you got interested, contact me</h1>
+            <h1 style={{fontSize: "20px",marginTop: "7vw", marginBottom: "5vw"}}>Thanks for your visit! If you got interested, contact me</h1>
             <Contact/>
           </div>
         </div>
